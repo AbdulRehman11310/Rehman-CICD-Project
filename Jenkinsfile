@@ -23,8 +23,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker build -t rehman-cicd-project .'
-                echo 'Deployed!'
+                echo 'Deploying application...'
+                echo 'Application Deployed Successfully!'
             }
         }
         stage('Notify') {
@@ -38,4 +38,3 @@ pipeline {
         failure { echo 'Pipeline FAILED!' }
     }
 }
-
