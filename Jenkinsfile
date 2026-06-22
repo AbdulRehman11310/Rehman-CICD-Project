@@ -4,7 +4,7 @@ pipeline {
         nodejs 'Node20'
     }
     environment {
-        DOCKER_IMAGE = 'YOUR-DOCKERHUB-USERNAME/rehman-cicd-project'
+        DOCKER_IMAGE = 'arehman8619815/rehman-cicd-project'
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
     stages {
